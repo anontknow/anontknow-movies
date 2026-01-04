@@ -64,9 +64,10 @@ const API_KEY = 'ac5c80e1175055ebec5f0191d20beb5d';
         embedURL = `https://vidsrc.net/embed/${type}/?tmdb=${currentItem.id}`;
       } else if (server === "player.videasy.net") {
         embedURL = `https://player.videasy.net/${type}/${currentItem.id}`;
-      }
-        else if (server === "vidlink.pro") {
+      } else if (server === "vidlink.pro") {
         embedURL = `https://vidlink.pro/${type}/${currentItem.id}`;
+      } else if (server === "vidsrc-embed.ru") {
+        embedURL = `https://vidsrc-embed.ru/embed/${type}/?tmdb=${currentItem.id}`;
       }
 
       document.getElementById('modal-video').src = embedURL;
@@ -125,4 +126,5 @@ const API_KEY = 'ac5c80e1175055ebec5f0191d20beb5d';
 
 
     init();
+
 
